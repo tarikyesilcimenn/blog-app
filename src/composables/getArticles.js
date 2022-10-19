@@ -14,8 +14,8 @@ const getArticles = () => {
         } catch (error) {
             errors.value = error.message;
         }
-        return{articles, errors, loadArticleList}
     }
+    return{articles, errors, loadArticleList}
 }
 
 export default getArticles;

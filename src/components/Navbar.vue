@@ -1,7 +1,7 @@
 <template>
   <nav>
-    <router-link :to="{ name: 'home' }">Makale Listesi</router-link>
-    <router-link :to="{ name: 'addArcticle' }">Makale Oluştur</router-link>
+    <router-link :to="{ name: 'home' }">Article List</router-link>
+    <router-link :to="{ name: 'addArcticle' }">Create Article</router-link>
   </nav>
 </template>
 <script>

@@ -1,15 +1,16 @@
-import firebase from "firebase/app";
-import "firebase/firestore";
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+import firebase from 'firebase/compat/app';
+import 'firebase/compat/firestore';
+import {serverTimestamp} from 'firebase/firestore'
 const firebaseConfig = {
-  apiKey: "AIzaSyC70zHPW0dog25Ix9p68abQStgcGM6T6KE",
-  authDomain: "vue-3-firebase-projects.firebaseapp.com",
-  projectId: "vue-3-firebase-projects",
-  storageBucket: "vue-3-firebase-projects.appspot.com",
-  messagingSenderId: "70084697914",
-  appId: "1:70084697914:web:4579d46b0ae8b8686ffa03",
-  measurementId: "G-144Y3WPHXR",
+  apiKey: "AIzaSyBEd3HfCha5f8kDUrPmrU4JVKg8rSVSJ5M",
+  authDomain: "blog-app-b4d67.firebaseapp.com",
+  projectId: "blog-app-b4d67",
+  storageBucket: "blog-app-b4d67.appspot.com",
+  messagingSenderId: "402581784871",
+  appId: "1:402581784871:web:df6b4056fd362324b84102",
+  measurementId: "G-J298QFT0Z7"
   };
 firebase.initializeApp(firebaseConfig);
 const db = firebase.firestore();
-export {db};
+const timeStamp = serverTimestamp();
+export {db, timeStamp};
