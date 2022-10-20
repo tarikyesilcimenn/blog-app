@@ -5,8 +5,9 @@
     <div v-if="article" class="detail content">
         <h2><i>Article Header : </i>{{article.header}}</h2>
         <p><i>Article Content: </i>{{article.content}}</p>
+        <p><i>Created Date: </i>{{article.createdDate}}</p>
     </div>
-    <div v-else v-show="errors.length !== 0">
+    <div v-else>
         Loading...
     </div>
   </div>

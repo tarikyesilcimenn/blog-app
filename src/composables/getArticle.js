@@ -12,8 +12,9 @@ const getArticle = (id) => {
             if(!res.exists) {
                 throw Error('Article not found');
             }
-            article.value = {...res.data(), id:res.id}
             const date = res.data().createdDate.toDate();
+            const editedDate  =moment(date).format('LL');
+            article.value = {...res.data(), id:res.id, createdDate:editedDate};
         } catch (error) {
             errors.value = error.message;
         }
